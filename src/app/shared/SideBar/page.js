@@ -1,8 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+
+import profilePhoto from "@/app/assets/profile.png";
 
 import { MdDehaze } from "react-icons/md";
 
@@ -22,22 +25,34 @@ function SideBar() {
           <div>Home</div>
         </div>
 
-        <div className="drawer-side">
+        <div className="drawer-side text-center">
           <label
             htmlFor="my-drawer-2"
             aria-label="close sidebar"
             className="drawer-overlay"
           ></label>
-          <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+          <ul className="menu p-4 w-80 min-h-full bg-[#F2F3F7] text-base-content flex items-center">
             {/* Sidebar content here */}
 
             {/* Top Section */}
-            <div>
-              <h1 className="text-2xl">Muhammad Noman</h1>
+            <div className="mb-10 flex flex-col items-center">
+              <Image
+                src={profilePhoto}
+                width={250}
+                height={250}
+                alt="Picture of the author"
+                className="rounded-full"
+              />
+
+              <h1 className="text-2xl mt-3">Muhammad Noman</h1>
+              <h3 className="text-md">
+                {" "}
+                <span className="text-[#54AAF1]">Full-stack</span> Web Developer
+              </h3>
             </div>
 
             {/* Nav Section */}
-            <li>
+            <li className="text-center">
               <Link href={"/"} className={pathname == "/" ? "active" : ""}>
                 Home
               </Link>
