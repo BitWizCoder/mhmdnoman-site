@@ -14,8 +14,10 @@ export default function RootLayout({ children }) {
     <html lang="en" data-theme="light">
       <body className={inter.className}>
         <div className="container mx-auto lg:flex">
-          <SideBar />
-          {children}
+          <div>
+            <SideBar />
+          </div>
+          <div className="ml-6">{children}</div>
         </div>
       </body>
     </html>
