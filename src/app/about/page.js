@@ -5,11 +5,11 @@ function About() {
     <div className="mt-14">
       <h1 className="text-3xl mb-3">WHO AM I?</h1>
       <p className="mb-3">
-        Hi I'm Jackson Ford On her way she met a copy. The copy warned the
+        Hi I&apos;m Jackson Ford On her way she met a copy. The copy warned the
         Little Blind Text, that where it came from it would have been rewritten
         a thousand times and everything that was left from its origin would be
-        the word "and" and the Little Blind Text should turn around and return
-        to its own, safe country.
+        the word &apos;and&apos; and the Little Blind Text should turn around
+        and return to its own, safe country.
       </p>
       <p>
         Even the all-powerful Pointing has no control about the blind texts it
