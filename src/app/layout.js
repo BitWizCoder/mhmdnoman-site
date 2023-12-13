@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import SideBar from "./shared/SideBar/page";
+import Footer from "./shared/footer/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,10 +15,15 @@ export default function RootLayout({ children }) {
     <html lang="en" data-theme="light">
       <body className={inter.className}>
         <div className="container mx-auto lg:flex">
-          <div>
+          <div className="fixed">
             <SideBar />
           </div>
-          <div className="ml-6">{children}</div>
+          <div className="pl-[320px]">
+            <div className="ml-6">{children}</div>
+            {/* <div className="text-center fixed bottom-0 mx-auto w-[70%] mb-4">
+              <Footer />
+            </div> */}
+          </div>
         </div>
       </body>
     </html>
