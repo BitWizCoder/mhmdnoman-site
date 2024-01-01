@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="mt-14">
+    <div className="mt-32">
       <h1 className="text-3xl mb-3">WHO AM I?</h1>
       <p className="mb-3">
         Hi I&apos;m Jackson Ford On her way she met a copy. The copy warned the

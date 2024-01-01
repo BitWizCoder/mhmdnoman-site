@@ -5,7 +5,7 @@ import homeAnimation from "@/app/assets/lottie-animations/home-animation.json";
 
 function Home() {
   return (
-    <div className="flex mt-14">
+    <div className="flex mt-24">
       <div>
         <h1 className="text-5xl">
           HI! <br /> I’m Noman
